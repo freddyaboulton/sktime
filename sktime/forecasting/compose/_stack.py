@@ -3,7 +3,7 @@
 # copyright: sktime developers, BSD-3-Clause License (see LICENSE file)
 """Implements forecasters for combining forecasts via stacking."""
 
-__author__ = ["Markus Löning"]
+__author__ = ["mloning"]
 __all__ = ["StackingForecaster"]
 
 from warnings import warn
@@ -64,9 +64,10 @@ class StackingForecaster(_HeterogenousEnsembleForecaster):
 
     _required_parameters = ["forecasters"]
     _tags = {
-        "univariate-only": False,
+        "ignores-exogeneous-X": False,
         "requires-fh-in-fit": True,
         "handles-missing-data": False,
+        "scitype:y": "univariate",
     }
 
     def __init__(self, forecasters, regressor=None, random_state=None, n_jobs=None):

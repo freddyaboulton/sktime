@@ -209,7 +209,7 @@ Difference
 .. currentmodule:: sktime.transformations.series.difference
 
 .. autosummary::
-    :toctree: modules/auto_generated/
+    :toctree: auto_generated/
     :template: class.rst
 
     Differencer
@@ -271,6 +271,17 @@ Missing value imputation
 
     Imputer
 
+Datetime feature generation
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. currentmodule:: sktime.transformations.series.date
+
+.. autosummary::
+    :toctree: auto_generated/
+    :template: class.rst
+
+    DateTimeFeatures
+
 Outlier detection
 ~~~~~~~~~~~~~~~~~
 
@@ -305,10 +316,22 @@ Theta
 
     ThetaLinesTransformer
 
+Summary
+~~~~~~~
+
+.. currentmodule:: sktime.transformations.series.summarize
+
+.. autosummary::
+    :toctree: auto_generated/
+    :template: class.rst
+
+    SummaryTransformer
+    MeanTransformer
+
 FeatureSelection
 ~~~~~~~~~~~~~~~~
 
-.. currentmodule:: sktime.transformations.series.feauture_selection
+.. currentmodule:: sktime.transformations.series.feature_selection
 
 .. autosummary::
     :toctree: auto_generated/
